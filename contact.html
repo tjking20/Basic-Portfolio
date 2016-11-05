@@ -5,12 +5,14 @@
 	<title>Timothy J. King Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact-form.css">
+
 
 </head>
 
 
 <body>
-
+	<div class= "wrapper">
 	<header id="header"> 
 
 		<div class="container">
@@ -29,37 +31,47 @@
 
 	</header>
 
-	
-		<div class= "container">
+	 <!-- start contact form-->
 
-			<div class="contactform">
+	<div class= "container">
 
-				<h2>Contact</h2>
+		<div class="contactform">
 
-				<form action= "action_page.php">
+			<h2>Contact</h2>
 
-					Name<br>
+			<form action= "action_page.php">
 
-					<input type="text" name="John Smith"> 
-					<br>
-					Email
-					<br>
-					<input type="text" name="example@gmail.com"> 
-					<br>
-					Message 
-					<br>
-					<input type="text" name="message">
-					<br>
-					<input type="submit" name="Submit">
+				Name<br>
 
-				</form>
+				<input id= "name" type="text" name="John Smith" placeholder="John Smith"> 
+				<br>
 
-			</div>
+				Email
 
+				<br>
 
-
+				<input id= "email" type="text" name="example@gmail.com" placeholder= "example@gmail.com"> 
 				
-			<aside class="sidebar">
+				<br>
+
+				Message 
+				<br>
+
+				<input id= "message" type="text" name="message">
+				
+				<br>
+
+				<input id= "submit-button" type="Submit" value= "Submit" name="Submit">
+
+			</form>
+
+		</div>
+
+
+  <!-- side bar contatining social media links -->
+			
+		
+				<aside class="sidebar">
 
 				<div class= "sidebar-container">
 
@@ -68,15 +80,15 @@
 					<section id="social-media-icons">
 
 						<a href="https://github.com/tjking20" target= "_blank">
-							     <img src="assets/images/github.png" alt="picture of Github icon">     
+							     <img class= "sm-icons" src="assets/images/github.png" alt="picture of Github icon">     
 						</a> 
 
 						<a href= "https://www.linkedin.com/in/timothy-king-91662428" target= "_blank">
-							     <img src="assets/images/linkedin.png" alt="linkedin logo">     
+							     <img class= "sm-icons" src="assets/images/linkedin.png" alt="linkedin logo">     
 						</a>   
 
 						<a href="http://stackexchange.com/users/9452051/tjking20" target= "_blank">
-							<img src="assets/images/stack-overflow.png" alt= "stack overflow logo">
+							<img class= "sm-icons" src="assets/images/stack-overflow.png" alt= "stack overflow logo">
 						</a>
 
 					</section>
@@ -84,10 +96,11 @@
 				</div>
 
 			</aside>
-
-
 		</div>
-	<footer>
+
+		<div class= "push"></div>
+	</div>
+	<footer class= "footer">
 		<h6>&#169; Copyright 2016</h6>
 	</footer>
 
