@@ -23,6 +23,11 @@
 #submit-button{
 	background-color: #4aaaa5;
 	color: white;
-
+	height: 40px;
+	width: 100px;
+	position: relative;
+	top: 15px;
+	font-size: 15px
 
 }
+
